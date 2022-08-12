@@ -1,0 +1,227 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg);
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+}
+/*input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+} */
+body{
+  /*height: 100%;*/
+}
+button{
+  cursor: pointer;
+}
+.container{
+  width: 300px;
+  margin: auto;
+  transition: 1s;
+  margin-top: 50px;
+  /*height: 100%;*/
+}
+.container .title{
+  margin-top: 20px;
+  /*margin-bottom: 40px;*/
+}
+.title div{
+  width: 50%;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0px;
+  color: #ffffff;
+  background-color: #333333;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.title .active{
+  opacity: 1;
+  cursor: default;
+}
+.title::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0px auto;
+}
+
+.container .input-group{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+.input-group .icon{
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-color: #333333;
+  -webkit-background-size: 70% 70%;
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+}
+.input-group .icon-user-name{
+  background-image: url(../img/用户名.png);
+}
+.input-group .icon-password{
+  background-image: url(../img/psw.png);
+}
+.input-group .icon-ver-code{
+  background-image: url(../img/验证码.png);
+}
+.input-group .icon-phone-number{
+  background-image: url(../img/手机号.png);
+}
+.input-group .icon-true{
+  background-image: url(../img/true.png);
+  position: absolute;
+  right: 0px;
+  background-size: 50% 50%;
+  background-color: rgba(0,0,0,0);
+  display: none;
+}
+.tip{
+  color: #ff5b5b;
+  margin-top: 10px;
+  transition: all 2s;
+  font-size: 16px;
+  display: none;
+}
+.tip * {
+  /*visibility: hidden;*/
+  /*display: none;*/
+  transition: 2s;
+}
+.tip .icon{
+  margin-right: 10px;
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-image: url(../img/false.png);
+}
+.input-group input{
+  border: 0px;
+  float: left;
+  width: 236px;
+  padding: 12px;
+}
+.input-group .input-remember{
+  width: 15px;
+  height: 100%;
+}
+.input-group span{
+  color: #cccccc;
+  line-height: 40px;
+}
+.input-group span.forget{
+  float: right;
+  cursor: pointer;
+}
+button{
+  /*margin-top: 10px;*/
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  border: 0px;
+  background: #4cae4c;
+}
+.other{
+  color: #cccccc;
+  position: relative;
+}
+.other div{
+  margin: 20px 0px;
+  text-align: center;
+}
+.other ul{
+  list-style: none;
+  height: 40px;
+}
+
+.other ul li{
+  /*float: left;*/
+  position: absolute;
+}
+.other ul img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.other .left{
+  left: 30px;
+}
+.other .right{
+  right: 30px;
+}
+.other .center{
+  left: 135px;
+}
+/*input{
+  outline: 1px #ff5b5b solid;
+}*/
+.button-register{
+  margin-top: 20px;
+}
+.input-group .ver-code{
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  background: #4cae4c;
+  color: #ffffff;
+  /*box-sizing: border-box;*/
+  padding:0px 10px;
+}
+form{
+  display: none;
+}
+form.active{
+  display: inline-block;
+}
+.message-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5); 
+  top: 0px;
+  display: none;
+}
+.message-container .message{
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 200px auto;
+  transition: 1s;
+  background: rgb(256, 256, 256);
+  padding-bottom: 40px;
+}
+.message div{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #595959;
+}
+.message .icon{
+  /*display: inline-block;*/
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  background: url(../img/正确.png);
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+
+}

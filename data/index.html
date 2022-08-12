@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>点灯科技</title>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div class="container">
+		<a href=""><img class="logo" src="img/logo.png"></a>
+		<div class="title">
+			<div class="login active" style="width: 100%;">Login</div>
+		</div>
+		<form class="login-form active" id="loginForm" action="http://192.168.4.1/login" method="POST">
+			<div>
+				<div  class="input-group">
+				  <span class="icon icon-password"></span>
+				  <input class="input-password" type="text" name="password" id="psw" required placeholder="请输入密钥">
+				  <span class="icon icon-true"></span>
+				</div>
+			</div>
+			<button class="button-login" type="submit">登录</button>
+		</form>
+	</div>
+	
+	<div class="message-container">
+		<div class="message">
+			<div class="icon icon-true"></div>
+			<div class="message-text">登录成功</div>
+		</div>
+	</div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-cookie.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
